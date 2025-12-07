@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sf: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: linear-gradient(135deg, #0c0a1a 0%, #1a0033 100%);
+    color: white;
+    min-height: 100vh;
+  }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+}
